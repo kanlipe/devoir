@@ -1,0 +1,176 @@
+/* général */
+
+/* variable */
+:root{
+    --bgColor: #040404;
+    --primaryColor: #165416;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+   
+}
+
+/* navabr */
+.navbar-brand img{
+    width:200px ;
+    height: 50px;
+    object-fit: contain;
+    background-color: rgb(225, 225 ,225);
+    border-radius: 0px;
+}
+.navbar{
+    background-color: var(--bgcolor) !important;
+}
+
+.navbar ul li a{
+  color: #080808; 
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+.navbar ul li a.active{
+    color: var(--primarycolor) !important;
+    border: 2px solid var(--primarycolor);
+}
+.navbar ul li a :hover{
+
+}
+.navbar ul li.dropdown ul li{
+    color: rgb(98, 13, 236);
+}
+.navbar ul li.dropdown ul li a{
+    color: var(--bgcolor);
+}
+
+.boda{
+    background-color:rgb(10, 10, 236);
+    border-radius: 4px 4px;
+}
+
+/* bannière */
+.banner{
+    background-color: var(--bgColor);
+}
+
+.banner .banner-img{
+    background: url(../images/pro2.jpg) no-repeat center/contain fixed;
+}
+
+.banner .banner-overlay{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-overlay h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* a propos */
+section#about .container{
+    background-color: white;
+    padding: 50px;
+    margin-top:50px;
+}
+
+section#about .trait{
+    height: 2px;
+    width: 100px;
+    background-color:var(--primarycolor);
+    margin-bottom:30px;
+
+}
+ section#about h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: var(--primarycolor);
+}
+ section#about.progress-bar{
+    background-color:var(--primarycolor);
+}
+
+section#services .trai{
+    height: 5px;
+    width: 50px;
+    background-color: var(--primarycolor);
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+}
+section#services .boite-icon .bi{
+    font-size: 40px;
+}
+
+section#services .boite-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 10px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    cursor: pointer;
+}
+
+section#services .card:hover .boite-icon .bi{
+color: white !important;
+}
+section#services .card:hover .boite-icon{
+    background-color: rgb(186, 186, 230);
+    border: 10px solid rgba(155,197, 213, );
+    transition-duration: 0.5s;
+}
+
+section#work{
+    background: url(../TRANNY/pictur/pla1.png) no-repeat center/cover fixed;
+}
+section#work .overlay{
+    height: 450px;
+    background-color: rgb(0,0, 255, 0.6);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#work .boite-icon{
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: 10px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    font-size: 40px;
+
+}
+section#work h3{
+    font-size: 35px;
+}
+
+
+section#work .boite-icon.bi{
+    font-size: 30px;
+    color: white;
+}
+
+/* mobile */
+@media (max-width:42px) {
+    .banner .banner-overlay{
+        height: 350px;
+    }
+}
